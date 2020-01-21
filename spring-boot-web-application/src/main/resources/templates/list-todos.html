@@ -51,6 +51,7 @@
 										<th>Name</th>
 										<th>Desc</th>
 										<th>Date</th>
+										<th>Update</th>
 										<th>Delete</th>
 										<!-- <th>Delete</th> -->
 									</tr>
@@ -72,8 +73,12 @@
 									<td th:text="${data.desc}"></td>
 									<td th:text="${data.targetDate}"></td>
 									<!-- <td><a class="btn btn-danger" type="button" href="/delete-todo?id="${data.id}">Delete</a></td> -->
-									<td><a href="#"
-											th:href="@{'/delete-todo' + ${data.id}}" class="btn btn-warning" >Delete</a></td>
+									<!-- <td><a href="#"
+											th:href="@{'/delete-todo' + ${data.id}}" class="btn btn-warning" >Delete</a></td> -->
+											<td><a href="#"
+											th:href="@{'/update-todo?id=' + ${data.id}}" class="btn btn-warning" >Update</a></td>
+											<td><a href="#"
+											th:href="@{'/delete-todo?id=' + ${data.id}}" class="btn btn-danger" >Delete</a></td>
 								</tr>
 							</table>
 						</div>
