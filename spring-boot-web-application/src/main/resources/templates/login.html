@@ -5,6 +5,13 @@
 <title>Web Applicationre</title>
 </head>
 <body>
-Spring Boot Web Application welcomes<h2 th:text="${name}">temp</h2>
+
+	<font color="red" th:text="${errorMessage}">temp</font>
+	<!-- deafult get -->
+	<form method="post">
+		name: <input type="text" name="name" /><br /> password: <input
+			type="password" name="password" /><br /> <input type="submit" />
+	</form>
+
 </body>
 </html>
