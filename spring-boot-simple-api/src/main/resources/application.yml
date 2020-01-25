@@ -1,0 +1,19 @@
+#logging:
+#  level:
+#    org.springframework: INFO
+#    org.springframework.web.servlet: DEBUG
+
+
+
+#dev:
+#basic:
+#  value: true
+#  message: Welcome to world of himanshu
+#  number: 20000
+  
+  
+#prod:
+#basic:
+#  value: false
+#  message: Welcome to world of himanshu
+#  number: 20000
